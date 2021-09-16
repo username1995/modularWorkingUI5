@@ -197,7 +197,7 @@ for (var i = 1; i <= 31; i++) {
        this.inputId = oEvent.getSource().getId();
         var path;var oTableStdListTemplate;
         var oFilterTableNo;
-        this.oDialog = sap.ui.xmlfragment("project001employee.view.NameSearchHelp", this);
+        this.oDialog = sap.ui.xmlfragment("ui.demo.multiComponent.app.Sub3Component.view.NameSearchHelp", this);
       
         var book = {
             "Name": ""   
@@ -209,7 +209,7 @@ for (var i = 1; i <= 31; i++) {
             // load asynchronous XML fragment
             Fragment.load({
                 id: oView.getId(),
-                name: "project001employee.view.NameSearchHelp",
+                name: "ui.demo.multiComponent.app.Sub3Component.view.NameSearchHelp",
                 controller: this
             }).then(function (oDialog) {
                 // connect dialog to the root view of this component (models, lifecycle)
@@ -378,7 +378,7 @@ for (var i = 1; i <= 31; i++) {
                 // load asynchronous XML fragment
                 Fragment.load({
                     id: oView.getId(),
-                    name: "project001employee.view.AddDialog",
+                    name: "ui.demo.multiComponent.app.Sub3Component.view.AddDialog",
                     controller: this
                 }).then(function (oDialog) {
                     // connect dialog to the root view of this component (models, lifecycle)
@@ -503,7 +503,7 @@ for (var i = 1; i <= 31; i++) {
                     // load asynchronous XML fragment
                     Fragment.load({
                         id: oView.getId(),
-                        name: "project001employee.view.UpdateDialog",
+                        name: "ui.demo.multiComponent.app.Sub3Component.view.UpdateDialog",
                         controller: this
                     }).then(function (oDialog) {
                         oView.addDependent(oDialog);
