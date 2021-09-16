@@ -82,6 +82,11 @@
           "pattern": "component2/:viewPattern:",
           "name": "sub2ComponentView",
           "target": ["masterView", "component2View"]
+        },
+        {
+          "pattern": "component3/:viewPattern:",
+          "name": "sub3ComponentView",
+          "target": ["masterView", "component3View"]
         }
       ],
       "targets": {
@@ -99,6 +104,11 @@
         "component2View": {
           "viewName": "Component2View",
           "viewId": "component2View",
+          "controlAggregation": "detailPages"
+        },
+        "component3View": {
+          "viewName": "Component3View",
+          "viewId": "component3View",
           "controlAggregation": "detailPages"
         }
       }

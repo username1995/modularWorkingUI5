@@ -1,9 +1,18 @@
-sap.ui.define([
-   "sap/ui/core/mvc/Controller",
-   "sap/ui/model/resource/ResourceModel"
-], function (Controller, ResourceModel) {
-   "use strict";
-   return Controller.extend("project001employee.controller.App", {
-      
-   });
-});
+sap.ui.define(
+  [
+    "sap/ui/core/mvc/Controller",
+    "ui/demo/multiComponent/app/Sub3Component/model/formatter"
+  ],
+  function(Controller, formatter) {
+    "use strict";
+
+    return Controller.extend(
+      "ui.demo.multiComponent.app.Sub3Component.controller.App",
+      {
+        formatter: formatter,
+
+        onInit: function() {}
+      }
+    );
+  }
+);

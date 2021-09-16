@@ -47,7 +47,7 @@ for (var i = 1; i <= 31; i++) {
 
 
 
-    return Controller.extend("project001employee.controller.BookList", {
+    return Controller.extend("ui.demo.multiComponent.app.Sub3Component.controller.BookList", {
       //  var chuj;
 
       onSearch2: function (event) {
@@ -187,39 +187,13 @@ for (var i = 1; i <= 31; i++) {
 */
    
             this.getView().setModel(i18nModel, "i18n");
-        //    var oModel = new sap.ui.model.json.JSONModel(oData);
-		//	this.getView().setModel(oModel,"list");
-    //         var jsonModel = new sap.ui.model.json. JSONModel({
-    //             rows: [{
-    //               name: '00001000'
-    //             }, {
-    //               name: '00002000'
-    //             }]
-    //           });
-
-    //    this.getView().setModel(jsonModel, "list");
-           
-            //     var jsonModel = new sap.ui.model.json. JSONModel({
-            //         rows: [{
-            //           sectionId: '00001000',
-            //           costId: '1L'
-            //         }, {
-            //           sectionId: '00002000',
-            //           costId: '2'
-            //         }]
-            //       });
-
-            // this.getView().setModel(jsonModel, "list");
             this.getView().setModel(this.getOwnerComponent().getModel("dupa"));
-       //     this.getView().setModel(this.getOwnerComponent().getModel("tableData"));//do mocka
         },
         onSearch: function(oEvent) 
         {
 
             this.getView().setModel(this.getOwnerComponent().getModel("ZNames2Entity"));
-
         var sInputValue = oEvent.getSource().getValue();
-        
        this.inputId = oEvent.getSource().getId();
         var path;var oTableStdListTemplate;
         var oFilterTableNo;

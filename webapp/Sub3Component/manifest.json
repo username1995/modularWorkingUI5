@@ -1,14 +1,14 @@
 {
-  "_version": "",
+  "_version": "1.12.0",
   "sap.app": {
-    "id": "project001employee",
+    "id": "ui.demo.multiComponent.app.Sub3Component",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
       "version": "1.0.0"
     },
-    "title": "",
-    "description": "",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
     "resources": "resources.json",
     "ach": "ach",
     "dataSources": {
@@ -44,10 +44,11 @@
       
 		}
   },
+
   "sap.ui": {
     "technology": "UI5",
     "icons": {
-      "icon": "sap-icon://task",
+      "icon": "",
       "favIcon": "",
       "phone": "",
       "phone@2": "",
@@ -62,12 +63,11 @@
   },
 
   "sap.ui5": {
-    "flexEnabled": false,
     "rootView": {
-      "viewName": "project001employee.view.MainView",
+      "viewName": "ui.demo.multiComponent.app.Sub3Component.view.App",
       "type": "XML",
       "async": true,
-      "id": "MainView"
+      "id": "app"
     },
     "dependencies": {
       "minUI5Version": "1.66.0",
@@ -85,10 +85,10 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "project001employee.i18n.i18n"
+          "bundleName": "ui.demo.multiComponent.app.Sub3Component.i18n.i18n"
         }
       },
-			"dupa": {
+      "dupa": {
 				"dataSource": "mainService"	
 			},
       "local": {
@@ -109,37 +109,29 @@
         {
           "uri": "css/style.css"
         }
-      ],
-      "libs": [
-        {
-          "uri": "libs/pdf_viewer.js"
-        }
       ]
     },
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
-        "async": true,
-        "viewPath": "project001employee.view",
-        "controlAggregation": "pages",
+        "viewPath": "ui.demo.multiComponent.app.Sub3Component.view",
         "controlId": "app",
-        "clearControlAggregation": false
+        "controlAggregation": "pages",
+        "async": true
       },
       "routes": [
         {
-          "name": "RouteMainView",
-          "pattern": "RouteMainView",
-          "target": ["TargetMainView"]
+          "pattern": "component3/view1",
+          "name": "Sub3view1",
+          "target": "targetSub3View1"
         }
       ],
       "targets": {
-        "TargetMainView": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "MainView",
-          "viewName": "MainView"
+        "targetSub3View1": {
+          "viewName": "Sub3View1",
+          "viewLevel": 1,
+          "viewId": "idSub3View1"
         }
       }
     }

@@ -10,6 +10,7 @@
 			<List>
 				<StandardListItem type="Active" title="Sub1Component" press="onPressNavSub1" />
 				<StandardListItem type="Active" title="Sub2Component" press="onPressNavSub2" />
+				<StandardListItem type="Active" title="Sub3Component" press="onPressNavSub3" />
 			</List>
 		</content>
 	</Page>

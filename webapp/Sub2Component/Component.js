@@ -1,6 +1,12 @@
 sap.ui.define(
-  ["sap/ui/core/UIComponent", "sap/ui/Device", "./model/models"],
-  function(UIComponent, Device, models) {
+  ["sap/ui/core/UIComponent",
+   "sap/ui/Device", 
+   "./model/models",
+   "sap/m/Shell",
+   "sap/ui/core/ComponentContainer",
+   "sap/ui/core/routing/HashChanger"
+  ],
+  function(UIComponent, Device, models,Shell, ComponentContainer, HashChanger) {
     "use strict";
 
     return UIComponent.extend(
@@ -16,6 +22,8 @@ sap.ui.define(
          * @override
          */
         init: function() {
+
+
           // call the base component's init function
           UIComponent.prototype.init.apply(this, arguments);
 
