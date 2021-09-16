@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="ui.demo.multiComponent.app.RootComponent.controller.Master"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="Root Component List">
+		<content>
+			<List>
+				<StandardListItem type="Active" title="Sub1Component" press="onPressNavSub1" />
+				<StandardListItem type="Active" title="Sub2Component" press="onPressNavSub2" />
+			</List>
+		</content>
+	</Page>
+</mvc:View>
