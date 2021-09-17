@@ -95,7 +95,7 @@
         {
 					"pattern": "component5/view1",
 					"name": "master",
-					"target": "master"
+					"target": "targetSub5View1"
 				},
         {
 					"pattern": "EMPLOYEESet/{objectId}",
@@ -113,9 +113,9 @@
           "viewId": "idSub5View1"
         },
         "master": {
-					"viewName": "Master",
+					"viewName": "Sub5View1",
 					"viewLevel": 1,
-					"viewId": "master"
+					"viewId": "idSub5View1"
 				},
 				"object": {
 					"viewName": "Detail",
