@@ -5,12 +5,13 @@
 	xmlns:mvc="sap.ui.core.mvc">
 	<Page
 		id="page"
-		title="Root Component List">
+		title="Strona główna">
 		<content>
 			<List>
-				<StandardListItem type="Active" title="Sub1Component" press="onPressNavSub1" />
-				<StandardListItem type="Active" title="Sub2Component" press="onPressNavSub2" />
-				<StandardListItem type="Active" title="Sub3Component" press="onPressNavSub3" />
+				<StandardListItem type="Active" title="Niezalezny komponent 1" press="onPressNavSub1" />
+				<StandardListItem type="Active" title="Niezalezny komponent 2" press="onPressNavSub2" />
+				<StandardListItem type="Active" title="Lista pracownikow" press="onPressNavSub3" />
+				<StandardListItem type="Active" title="Worklist zintegrowany jako modul" press="onPressNavSub4" />
 			</List>
 		</content>
 	</Page>

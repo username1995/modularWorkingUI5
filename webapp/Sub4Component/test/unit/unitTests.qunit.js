@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"project001_employee/test/unit/AllTests"
+		"ui/demo/multiComponent/app/sub4component/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

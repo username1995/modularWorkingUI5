@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mock server</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>App Title</title>
 
-        <script
-            id="sap-ui-bootstrap"
-            src=
-            "../../resources/sap-ui-core.js"
-            data-sap-ui-theme="sap_belize"
-            data-sap-ui-resourceroots='{
-				"project001employee": "../"
+	<script id="sap-ui-bootstrap"
+			src="../resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_fiori_3"
+			data-sap-ui-resourceroots='{
+				"ui.demo.multiComponent.app.sub4component": "../"
 			}'
-            data-sap-ui-oninit="module:project001employee/test/initMockServer"
-            data-sap-ui-compatVersion="edge"
-            data-sap-ui-async="true"
-            data-sap-ui-frameOptions="trusted"
-            data-sap-ui-logLevel="debug"
-        ></script>
-    </head>
-    <body class="sapUiBody">
-        <div
-            data-sap-ui-component
-            data-name="project001employee"
-            data-id="container"
-            data-settings='{"id" : "project001_employee"}'
-        ></div>
-    </body>
+			data-sap-ui-oninit="module:ui/demo/multiComponent/app/sub4component/test/initMockServer"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true"
+			data-sap-ui-preload="async"
+			data-sap-ui-frameOptions="trusted">
+	</script>
+</head>
+<body class="sapUiBody">
+	<div data-sap-ui-component data-name="ui.demo.multiComponent.app.sub4component" data-id="container" data-settings='{"id" : "sub4component"}'></div>
+</body>
 </html>

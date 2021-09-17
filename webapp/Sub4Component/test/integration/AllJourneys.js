@@ -1,13 +1,17 @@
 sap.ui.define([
 	"sap/ui/test/Opa5",
 	"./arrangements/Startup",
-	"./NavigationJourney"
+	"./WorklistJourney",
+	"./NavigationJourney",
+	"./NotFoundJourney",
+	"./ObjectJourney"
 ], function (Opa5, Startup) {
 	"use strict";
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "project001employee.view.NameSearchHelp",
+		viewNamespace: "ui.demo.multiComponent.app.sub4component.view.",
 		autoWait: true
 	});
+
 });
