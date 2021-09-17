@@ -1,0 +1,14 @@
+<mvc:View
+	controllerName="ui.demo.multiComponent.app.Sub5Component.controller.Sub5View1"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="Sub Component 5 - View 1">
+		<content>	
+				
+			<mvc:XMLView viewName="ui.demo.multiComponent.app.Sub5Component.view.Master"/>
+		</content>
+	</Page>
+</mvc:View>

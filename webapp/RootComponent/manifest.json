@@ -42,7 +42,8 @@
       "libs": {
         "sap.ui.core": {},
         "sap.m": {},
-        "sap.ui.layout": {}
+        "sap.ui.layout": {},
+        "sap.f": {}
       }
     },
     "contentDensities": {
@@ -92,6 +93,11 @@
           "pattern": "component4/:viewPattern:",
           "name": "sub4ComponentView",
           "target": ["masterView", "component4View"]
+        },
+        {
+          "pattern": "component5/:viewPattern:",
+          "name": "sub5ComponentView",
+          "target": ["masterView", "component5View"]
         }
       ],
       "targets": {
@@ -119,6 +125,11 @@
         "component4View": {
           "viewName": "Component4View",
           "viewId": "component4View",
+          "controlAggregation": "detailPages"
+        },
+        "component5View": {
+          "viewName": "Component5View",
+          "viewId": "component5View",
           "controlAggregation": "detailPages"
         }
       }
