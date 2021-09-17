@@ -4,7 +4,7 @@ describe('sample', function () {
       expect(browser.getTitle()).toBe('OpenUI5 Todo App');
     });
   
-    it('should display the todo list',function() {
+    /*it('should display the todo list',function() {
       element(by.control({
         viewName: 'sap.ui.demo.todo.view.App',
         controlType: 'sap.m.CheckBox',
@@ -13,10 +13,10 @@ describe('sample', function () {
       .click();
     });
   
-    it('should have two items in the list',function() {
+  /*  it('should have two items in the list',function() {
       expect(element.all(by.control({
         viewName: 'sap.ui.demo.todo.view.App',
         controlType:'sap.m.CustomListItem'}))
       .count()).toBe(2);
-    });
+    });*/
   });

@@ -1,5 +1,5 @@
 exports.config = {
     profile: 'integration',
   
-    baseUrl: 'http://localhost:8080/index.html',
+    baseUrl: 'https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/master-detail/webapp/test/mockServer.html',
   };
