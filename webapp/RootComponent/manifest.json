@@ -98,6 +98,11 @@
           "pattern": "component5/:viewPattern:",
           "name": "sub5ComponentView",
           "target": ["masterView", "component5View"]
+        },
+        {
+          "pattern": "component6/:viewPattern:",
+          "name": "sub6ComponentView",
+          "target": ["masterView", "component6View"]
         }
       ],
       "targets": {
@@ -130,6 +135,11 @@
         "component5View": {
           "viewName": "Component5View",
           "viewId": "component5View",
+          "controlAggregation": "detailPages"
+        },
+        "component6View": {
+          "viewName": "Component6View",
+          "viewId": "component6View",
           "controlAggregation": "detailPages"
         }
       }
