@@ -53,8 +53,14 @@ sap.ui.define(["sap/ui/core/mvc/Controller", "../model/formatter"], function(
           .navTo("sub6ComponentView", {
             viewPattern: "view1"
           });
+      },
+      onPressNavSub7: function() {
+        this.getOwnerComponent()
+          .getRouter()
+          .navTo("sub7ComponentView", {
+            viewPattern: "view1"
+          });
       }
-
 
     }
   );

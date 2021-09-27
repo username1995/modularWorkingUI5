@@ -1,0 +1,113 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "sap.ui.demo.fiori2",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"dataSources": {
+			"mainService": {
+				"uri": "/sap/opu/odata/sap/ZEMPLOYEES_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "ui.demo.multiComponent.app.Sub7Component.view.App",
+			"type": "XML",
+			"async": true,
+			"id": "fcl"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.uxap": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		  },
+		  "models": {
+			"i18n": {
+			  "type": "sap.ui.model.resource.ResourceModel",
+			  "settings": {
+				"bundleName": "ui.demo.multiComponent.app.Sub5Component.i18n.i18n"
+			  }
+			},
+			"": {
+					  "dataSource": "mainService",
+					  "preload": true
+				  }
+		  },
+		"config": {
+			"fullWidth": true
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.f.routing.Router",
+				"viewType": "XML",
+				"viewPath": "ui.demo.multiComponent.app.Sub7Component.view",
+				"controlId": "flexibleColumnLayout",
+				"controlAggregation": "beginColumnPages",
+				"transition": "slide",
+				"bypassed": {
+					"target": "notFound"
+				},
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "component7/view1",
+					"name": "master",
+					"target": "targetSub7View1"
+				},
+        {
+					"pattern": "EMPLOYEESet/{objectId}",
+					"name": "object",
+					"target": [
+						"master",
+						"object"
+					]
+				}
+			],
+			"targets": {
+				"targetSub7View1": {
+				  "viewName": "Sub7View1",
+				  "viewLevel": 1,
+				  "viewId": "idSub7View1"
+				},
+				"master": {
+							"viewName": "Sub7View1",
+							"viewLevel": 1,
+							"viewId": "idSub7View1"
+						},
+						"object": {
+							"viewName": "Detail",
+							"viewId": "detail",
+							"viewLevel": 1,
+							"controlAggregation": "midColumnPages"
+						},
+						"detailObjectNotFound": {
+							"viewName": "DetailObjectNotFound",
+							"viewId": "detailObjectNotFound",
+							"controlAggregation": "midColumnPages"
+						},
+						"notFound": {
+							"viewName": "NotFound",
+							"viewId": "notFound"
+						}
+			  }
+		}
+	}
+}

@@ -14,7 +14,7 @@
 				<StandardListItem type="Active" title="Worklist zintegrowany jako modul" press="onPressNavSub4" />
 				<StandardListItem type="Active" title="Master - Detail zintegrowany jako modul" press="onPressNavSub5" />
 				<StandardListItem type="Active" title="Dynamic Page" press="onPressNavSub6" />
-
+				<StandardListItem type="Active" title="master detail uproszczone" press="onPressNavSub7" />
 			</List>
 		</content>
 	</Page>
