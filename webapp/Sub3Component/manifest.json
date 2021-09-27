@@ -110,7 +110,10 @@
           "uri": "css/style.css"
         }
       ]
-    },
+    },		
+    "config": {
+			"fullWidth": false
+		},
     "routing": {
       "config": {
         "routerClass": "sap.m.routing.Router",

@@ -62,14 +62,14 @@
         </headerToolbar>
 
         <columns>
-            <Column>
+            <Column width="6em">
                 <Text text="{i18n>totBooks}"/>
             </Column>
 
-            <Column>
+            <Column width="6em">
                 <Text text="{i18n>avBooks}"/>
             </Column>
-            <Column>
+            <Column width="6em">
                 <Text text="{i18n>totBooks}"/>
             </Column>
      
